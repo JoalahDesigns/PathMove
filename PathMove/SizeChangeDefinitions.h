@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  SizeChangeDefinitions.h
 //  PathMove
 //
 // Copyright (c) 2012, Joalah Designs LLC
@@ -30,10 +30,14 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#ifndef PathMove_SizeChangeDefinitions_h
+#define PathMove_SizeChangeDefinitions_h
 
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+typedef enum {
+    kSizeChangeNone = 0,
+    kSizeChangeGrow,
+    kSizeChangeShrink
+} SizeChangeEnum;
 
-@property (strong, nonatomic) UIWindow *window;
 
-@end
+#endif

@@ -1,7 +1,8 @@
 //
-//  JdAppDelegate.h
+//  JdBezierPath.h
 //  PathMove
 //
+
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
 //
@@ -30,10 +31,21 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
 
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+#import <Foundation/Foundation.h>
+#import "PathDefinitions.h"
+#import "JdBezierPoint.h"
 
-@property (strong, nonatomic) UIWindow *window;
+@interface JdBezierPath : NSObject
+
++(CGPoint)makeControlFor:(CGPoint)point atAngle:(float)angle andRadius:(float)radius;
+
+-(void)clearPath;
+-(void)startFrom:(CGPoint)start departAngle:(float)angle atRadius:(float)radius;
+-(void)curveTo:(CGPoint)location approachAngle:(float)angle atInRadius:(float)inRadius atOutRadius:(float)outRadius;
+-(UIBezierPath*)path;
+-(void)strokeWithColor:(UIColor*)strokeColor andThickness:(float)thickness inContext:(CGContextRef) ctx; 
+-(void)markWithColor:(UIColor*)strokeColor strokeThickness:(float)thickness pointColor:(UIColor*)pColor pointRadius:(float)pRadius inContext:(CGContextRef) ctx; 
+-(void)buildSmoothPathFrom:(CGPoint) start leadingOut:(BezierPathEnumType)leadOut to:(CGPoint)finish leadingIn:(BezierPathEnumType)leadIn forObjectSize:(CGSize)size;
 
 @end

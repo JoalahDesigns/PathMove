@@ -1,7 +1,8 @@
 //
-//  JdAppDelegate.h
+//  PathDefinitions.h
 //  PathMove
 //
+
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
 //
@@ -30,10 +31,24 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
 
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+#ifndef PathMove_PathDefinitions_h
+#define PathMove_PathDefinitions_h
 
-@property (strong, nonatomic) UIWindow *window;
+// Enums used to specify the construction of the bezier path
 
-@end
+// Starting and ending sub-paths of the overall path
+typedef enum {
+    kBezierPathArc=0,   // path directly leaves or approaches the terminal points
+    kBezierPathHook,    // Path does a simple hook 
+    kBezierPathOrbit,   // Path orbits around the terminal point
+} BezierPathEnumType;
+
+// Ending quadrants of the path
+typedef enum {
+    kFirstQuadrant=0,   
+    kSecondQuadrant,
+    kThirdQuadrant,
+    kFouthQuadrant
+} DestinationQuadrant;
+#endif

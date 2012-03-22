@@ -1,7 +1,8 @@
 //
-//  JdAppDelegate.h
+//  JdGraphicView.h
 //  PathMove
 //
+
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
 //
@@ -31,9 +32,19 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #import <UIKit/UIKit.h>
+#import "PathDefinitions.h"
 
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdGraphicView : UIView
 
-@property (strong, nonatomic) UIWindow *window;
+// Properties that define how the view will be drawn
+@property (nonatomic) DestinationQuadrant quadrant;    
+@property (nonatomic) BezierPathEnumType leadOut;
+@property (nonatomic) BezierPathEnumType leadIn;
+@property (readonly,nonatomic) CGPoint destination;
+@property (nonatomic) CGSize objectSize;
+@property (nonatomic) BOOL annotateBezierPaths;
+
+- (id)initWithFrame:(CGRect)frame forQuadrant:(DestinationQuadrant)quadrant withLeadOut:(BezierPathEnumType)leadOut andLeadIn:(BezierPathEnumType)leadIn andObjectSize:(CGSize)objSize;
+
 
 @end

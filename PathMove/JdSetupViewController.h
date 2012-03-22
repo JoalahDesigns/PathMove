@@ -1,7 +1,8 @@
 //
-//  JdAppDelegate.h
+//  JdSetupViewCOntroller.h
 //  PathMove
 //
+
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
 //
@@ -30,10 +31,32 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
 #import <UIKit/UIKit.h>
+#import "JdConfiguration.h"
 
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+// View controller for setting user selections
 
-@property (strong, nonatomic) UIWindow *window;
+@interface JdSetupViewController : UIViewController
+
+// User selctions to be passed back to the caller
+@property (strong, nonatomic) JdConfiguration* configuration;
+
+
+@property (strong, nonatomic) IBOutlet UISegmentedControl* segQuadrant;
+@property (strong, nonatomic) IBOutlet UISegmentedControl* segLeadOut;
+@property (strong, nonatomic) IBOutlet UISegmentedControl* segLeadIn;
+@property (strong, nonatomic) IBOutlet UISwitch* swRotate;
+@property (strong, nonatomic) IBOutlet UISwitch* swAnnotate;
+@property (strong, nonatomic) IBOutlet UISegmentedControl* segSize;
+@property (strong, nonatomic) IBOutlet UISwitch* swPreRotate;
+
+-(IBAction)quadrantChanged:(id)sender;
+-(IBAction)leadOutChanged:(id)sender;
+-(IBAction)leadInChanged:(id)sender;
+-(IBAction)rotateChanged:(id)sender;
+-(IBAction)annotateChanged:(id)sender;
+-(IBAction)sizeChanged:(id)sender;
+-(IBAction)preRotateChanged:(id)sender;
 
 @end

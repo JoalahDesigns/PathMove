@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdBezierPoint.m
 //  PathMove
 //
 // Copyright (c) 2012, Joalah Designs LLC
@@ -30,10 +30,36 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "JdBezierPoint.h"
 
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@implementation JdBezierPoint
 
-@property (strong, nonatomic) UIWindow *window;
+@synthesize location;
+@synthesize controlIn;
+@synthesize controlOut;
+
+// For a point in the middle of a path,
+// both control In and Out are necessary
+-(id)initCurve:(CGPoint)loc withControlIn:(CGPoint)ctrlIn andControlOut:(CGPoint)ctrlOut
+{
+    if (!(self = [super init])) return self;
+    
+    location = loc;
+    controlIn = ctrlIn;
+    controlOut = ctrlOut;
+    return self;
+}
+
+// For the starting point of the path, 
+// there is only a control Out.
+-(id)initStart:(CGPoint)loc withControlOut:(CGPoint)ctrlOut
+{
+    if (!(self = [super init])) return self;
+    
+    location = loc;
+    controlIn = loc;
+    controlOut = ctrlOut;
+    return self;
+}
 
 @end

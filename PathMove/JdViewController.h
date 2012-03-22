@@ -1,7 +1,8 @@
 //
-//  JdAppDelegate.h
+//  JdViewController.h
 //  PathMove
 //
+
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
 //
@@ -30,10 +31,10 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
 #import <UIKit/UIKit.h>
+#import "JdGraphicView.h"
 
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface JdViewController : UIViewController
 
 @end

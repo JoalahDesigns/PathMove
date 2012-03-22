@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdBezierPoint.h
 //  PathMove
 //
 // Copyright (c) 2012, Joalah Designs LLC
@@ -30,10 +30,19 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+// Object to hold the definitions required to fully specify a point
+// in the middle of a bezier path
 
-@property (strong, nonatomic) UIWindow *window;
+@interface JdBezierPoint : NSObject
+
+@property (nonatomic) CGPoint location;     // Location that the path runs through
+@property (nonatomic) CGPoint controlIn;    // Control point when moving towards the location
+@property (nonatomic) CGPoint controlOut;   // Control point when moving away from the location
+
+-(id)initStart:(CGPoint)loc withControlOut:(CGPoint)ctrlOut;
+-(id)initCurve:(CGPoint)loc withControlIn:(CGPoint)ctrlIn andControlOut:(CGPoint)ctrlOut;
+
 
 @end

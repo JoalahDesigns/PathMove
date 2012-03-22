@@ -13,6 +13,26 @@
 		43F49C53151B6EE200E8124F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C51151B6EE200E8124F /* InfoPlist.strings */; };
 		43F49C55151B6EE200E8124F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F49C54151B6EE200E8124F /* main.m */; };
 		43F49C59151B6EE200E8124F /* JdAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F49C58151B6EE200E8124F /* JdAppDelegate.m */; };
+		43F49C63151B6F2B00E8124F /* annotated.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C60151B6F2B00E8124F /* annotated.png */; };
+		43F49C64151B6F2B00E8124F /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C61151B6F2B00E8124F /* main.png */; };
+		43F49C65151B6F2B00E8124F /* setup.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C62151B6F2B00E8124F /* setup.png */; };
+		43F49C67151B6F3600E8124F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C66151B6F3600E8124F /* README.md */; };
+		43F49C69151B6F4B00E8124F /* icon-iphone-normal_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C68151B6F4B00E8124F /* icon-iphone-normal_57x57.png */; };
+		43F49C6B151B6F4E00E8124F /* icon-iphone-retina_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C6A151B6F4E00E8124F /* icon-iphone-retina_114x114.png */; };
+		43F49C6D151B6F5200E8124F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C6C151B6F5200E8124F /* Default.png */; };
+		43F49C6F151B6F5500E8124F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C6E151B6F5500E8124F /* Default@2x.png */; };
+		43F49C76151B6F9000E8124F /* ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C72151B6F9000E8124F /* ghost.png */; };
+		43F49C77151B6F9000E8124F /* ghost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C73151B6F9000E8124F /* ghost@2x.png */; };
+		43F49C78151B6F9000E8124F /* ghostBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C74151B6F9000E8124F /* ghostBig.png */; };
+		43F49C79151B6F9000E8124F /* ghostBig@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C75151B6F9000E8124F /* ghostBig@2x.png */; };
+		43F49C89151B6FD200E8124F /* JdBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F49C7B151B6FD200E8124F /* JdBezierPath.m */; };
+		43F49C8A151B6FD200E8124F /* JdBezierPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F49C7D151B6FD200E8124F /* JdBezierPoint.m */; };
+		43F49C8B151B6FD200E8124F /* JdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F49C7F151B6FD200E8124F /* JdConfiguration.m */; };
+		43F49C8C151B6FD200E8124F /* JdGraphicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F49C81151B6FD200E8124F /* JdGraphicView.m */; };
+		43F49C8D151B6FD200E8124F /* JdSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F49C83151B6FD200E8124F /* JdSetupViewController.m */; };
+		43F49C8E151B6FD200E8124F /* JdSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C84151B6FD200E8124F /* JdSetupViewController.xib */; };
+		43F49C8F151B6FD200E8124F /* JdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F49C86151B6FD200E8124F /* JdViewController.m */; };
+		43F49C95151B707100E8124F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F49C94151B707100E8124F /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +40,40 @@
 		43F49C48151B6EE200E8124F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43F49C4A151B6EE200E8124F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43F49C4C151B6EE200E8124F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		43F49C50151B6EE200E8124F /* PathMove-Info.plist */ = {isa = PBXFileReference; path = "PathMove-Info.plist"; sourceTree = "<group>"; };
+		43F49C50151B6EE200E8124F /* PathMove-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PathMove-Info.plist"; sourceTree = "<group>"; };
 		43F49C52151B6EE200E8124F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43F49C54151B6EE200E8124F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		43F49C56151B6EE200E8124F /* PathMove-Prefix.pch */ = {isa = PBXFileReference; path = "PathMove-Prefix.pch"; sourceTree = "<group>"; };
-		43F49C57151B6EE200E8124F /* JdAppDelegate.h */ = {isa = PBXFileReference; path = JdAppDelegate.h; sourceTree = "<group>"; };
+		43F49C56151B6EE200E8124F /* PathMove-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PathMove-Prefix.pch"; sourceTree = "<group>"; };
+		43F49C57151B6EE200E8124F /* JdAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JdAppDelegate.h; sourceTree = "<group>"; };
 		43F49C58151B6EE200E8124F /* JdAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JdAppDelegate.m; sourceTree = "<group>"; };
+		43F49C60151B6F2B00E8124F /* annotated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotated.png; sourceTree = "<group>"; };
+		43F49C61151B6F2B00E8124F /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
+		43F49C62151B6F2B00E8124F /* setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setup.png; sourceTree = "<group>"; };
+		43F49C66151B6F3600E8124F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		43F49C68151B6F4B00E8124F /* icon-iphone-normal_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-iphone-normal_57x57.png"; sourceTree = "<group>"; };
+		43F49C6A151B6F4E00E8124F /* icon-iphone-retina_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-iphone-retina_114x114.png"; sourceTree = "<group>"; };
+		43F49C6C151B6F5200E8124F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		43F49C6E151B6F5500E8124F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		43F49C72151B6F9000E8124F /* ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost.png; sourceTree = "<group>"; };
+		43F49C73151B6F9000E8124F /* ghost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ghost@2x.png"; sourceTree = "<group>"; };
+		43F49C74151B6F9000E8124F /* ghostBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghostBig.png; sourceTree = "<group>"; };
+		43F49C75151B6F9000E8124F /* ghostBig@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ghostBig@2x.png"; sourceTree = "<group>"; };
+		43F49C7A151B6FD200E8124F /* JdBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdBezierPath.h; sourceTree = "<group>"; };
+		43F49C7B151B6FD200E8124F /* JdBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdBezierPath.m; sourceTree = "<group>"; };
+		43F49C7C151B6FD200E8124F /* JdBezierPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdBezierPoint.h; sourceTree = "<group>"; };
+		43F49C7D151B6FD200E8124F /* JdBezierPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdBezierPoint.m; sourceTree = "<group>"; };
+		43F49C7E151B6FD200E8124F /* JdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdConfiguration.h; sourceTree = "<group>"; };
+		43F49C7F151B6FD200E8124F /* JdConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdConfiguration.m; sourceTree = "<group>"; };
+		43F49C80151B6FD200E8124F /* JdGraphicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdGraphicView.h; sourceTree = "<group>"; };
+		43F49C81151B6FD200E8124F /* JdGraphicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdGraphicView.m; sourceTree = "<group>"; };
+		43F49C82151B6FD200E8124F /* JdSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdSetupViewController.h; sourceTree = "<group>"; };
+		43F49C83151B6FD200E8124F /* JdSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdSetupViewController.m; sourceTree = "<group>"; };
+		43F49C84151B6FD200E8124F /* JdSetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JdSetupViewController.xib; sourceTree = "<group>"; };
+		43F49C85151B6FD200E8124F /* JdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdViewController.h; sourceTree = "<group>"; };
+		43F49C86151B6FD200E8124F /* JdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdViewController.m; sourceTree = "<group>"; };
+		43F49C87151B6FD200E8124F /* PathDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathDefinitions.h; sourceTree = "<group>"; };
+		43F49C88151B6FD200E8124F /* SizeChangeDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeChangeDefinitions.h; sourceTree = "<group>"; };
+		43F49C94151B707100E8124F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43F49C95151B707100E8124F /* QuartzCore.framework in Frameworks */,
 				43F49C49151B6EE200E8124F /* UIKit.framework in Frameworks */,
 				43F49C4B151B6EE200E8124F /* Foundation.framework in Frameworks */,
 				43F49C4D151B6EE200E8124F /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +94,8 @@
 		43F49C39151B6EE200E8124F = {
 			isa = PBXGroup;
 			children = (
+				43F49C70151B6F6C00E8124F /* iOS */,
+				43F49C5F151B6F0D00E8124F /* GitHub */,
 				43F49C4E151B6EE200E8124F /* PathMove */,
 				43F49C47151B6EE200E8124F /* Frameworks */,
 				43F49C45151B6EE200E8124F /* Products */,
@@ -62,6 +113,7 @@
 		43F49C47151B6EE200E8124F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43F49C94151B707100E8124F /* QuartzCore.framework */,
 				43F49C48151B6EE200E8124F /* UIKit.framework */,
 				43F49C4A151B6EE200E8124F /* Foundation.framework */,
 				43F49C4C151B6EE200E8124F /* CoreGraphics.framework */,
@@ -72,6 +124,22 @@
 		43F49C4E151B6EE200E8124F /* PathMove */ = {
 			isa = PBXGroup;
 			children = (
+				43F49C7A151B6FD200E8124F /* JdBezierPath.h */,
+				43F49C7B151B6FD200E8124F /* JdBezierPath.m */,
+				43F49C7C151B6FD200E8124F /* JdBezierPoint.h */,
+				43F49C7D151B6FD200E8124F /* JdBezierPoint.m */,
+				43F49C7E151B6FD200E8124F /* JdConfiguration.h */,
+				43F49C7F151B6FD200E8124F /* JdConfiguration.m */,
+				43F49C80151B6FD200E8124F /* JdGraphicView.h */,
+				43F49C81151B6FD200E8124F /* JdGraphicView.m */,
+				43F49C82151B6FD200E8124F /* JdSetupViewController.h */,
+				43F49C83151B6FD200E8124F /* JdSetupViewController.m */,
+				43F49C84151B6FD200E8124F /* JdSetupViewController.xib */,
+				43F49C85151B6FD200E8124F /* JdViewController.h */,
+				43F49C86151B6FD200E8124F /* JdViewController.m */,
+				43F49C87151B6FD200E8124F /* PathDefinitions.h */,
+				43F49C88151B6FD200E8124F /* SizeChangeDefinitions.h */,
+				43F49C71151B6F7D00E8124F /* Graphics */,
 				43F49C57151B6EE200E8124F /* JdAppDelegate.h */,
 				43F49C58151B6EE200E8124F /* JdAppDelegate.m */,
 				43F49C4F151B6EE200E8124F /* Supporting Files */,
@@ -88,6 +156,39 @@
 				43F49C56151B6EE200E8124F /* PathMove-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43F49C5F151B6F0D00E8124F /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				43F49C66151B6F3600E8124F /* README.md */,
+				43F49C60151B6F2B00E8124F /* annotated.png */,
+				43F49C61151B6F2B00E8124F /* main.png */,
+				43F49C62151B6F2B00E8124F /* setup.png */,
+			);
+			name = GitHub;
+			sourceTree = "<group>";
+		};
+		43F49C70151B6F6C00E8124F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				43F49C6E151B6F5500E8124F /* Default@2x.png */,
+				43F49C6C151B6F5200E8124F /* Default.png */,
+				43F49C6A151B6F4E00E8124F /* icon-iphone-retina_114x114.png */,
+				43F49C68151B6F4B00E8124F /* icon-iphone-normal_57x57.png */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		43F49C71151B6F7D00E8124F /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				43F49C72151B6F9000E8124F /* ghost.png */,
+				43F49C73151B6F9000E8124F /* ghost@2x.png */,
+				43F49C74151B6F9000E8124F /* ghostBig.png */,
+				43F49C75151B6F9000E8124F /* ghostBig@2x.png */,
+			);
+			name = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +243,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				43F49C53151B6EE200E8124F /* InfoPlist.strings in Resources */,
+				43F49C63151B6F2B00E8124F /* annotated.png in Resources */,
+				43F49C64151B6F2B00E8124F /* main.png in Resources */,
+				43F49C65151B6F2B00E8124F /* setup.png in Resources */,
+				43F49C67151B6F3600E8124F /* README.md in Resources */,
+				43F49C69151B6F4B00E8124F /* icon-iphone-normal_57x57.png in Resources */,
+				43F49C6B151B6F4E00E8124F /* icon-iphone-retina_114x114.png in Resources */,
+				43F49C6D151B6F5200E8124F /* Default.png in Resources */,
+				43F49C6F151B6F5500E8124F /* Default@2x.png in Resources */,
+				43F49C76151B6F9000E8124F /* ghost.png in Resources */,
+				43F49C77151B6F9000E8124F /* ghost@2x.png in Resources */,
+				43F49C78151B6F9000E8124F /* ghostBig.png in Resources */,
+				43F49C79151B6F9000E8124F /* ghostBig@2x.png in Resources */,
+				43F49C8E151B6FD200E8124F /* JdSetupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +268,12 @@
 			files = (
 				43F49C55151B6EE200E8124F /* main.m in Sources */,
 				43F49C59151B6EE200E8124F /* JdAppDelegate.m in Sources */,
+				43F49C89151B6FD200E8124F /* JdBezierPath.m in Sources */,
+				43F49C8A151B6FD200E8124F /* JdBezierPoint.m in Sources */,
+				43F49C8B151B6FD200E8124F /* JdConfiguration.m in Sources */,
+				43F49C8C151B6FD200E8124F /* JdGraphicView.m in Sources */,
+				43F49C8D151B6FD200E8124F /* JdSetupViewController.m in Sources */,
+				43F49C8F151B6FD200E8124F /* JdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +377,7 @@
 				43F49C5E151B6EE200E8124F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

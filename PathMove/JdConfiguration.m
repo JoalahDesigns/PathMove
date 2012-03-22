@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdConfiguration.m
 //  PathMove
 //
 // Copyright (c) 2012, Joalah Designs LLC
@@ -30,10 +30,34 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "JdConfiguration.h"
 
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@implementation JdConfiguration
 
-@property (strong, nonatomic) UIWindow *window;
+#pragma mark - Synthesize
+@synthesize leadOut;
+@synthesize leadIn;
+@synthesize quadrant;
+@synthesize rotate;
+@synthesize annotate;
+@synthesize sizeChange;
+@synthesize preRotate;
+
+#pragma mark - Initialisation
+
+-(id)init
+{
+    if (!(self=[super init])) return self;
+    
+    leadOut = kBezierPathArc;
+    leadIn = kBezierPathArc;
+    quadrant = kFirstQuadrant;
+    rotate = NO;
+    annotate = NO;
+    sizeChange = kSizeChangeNone;
+    preRotate = NO;
+    
+    return self;
+}
 
 @end

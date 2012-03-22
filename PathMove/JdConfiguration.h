@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdConfiguration.h
 //  PathMove
 //
 // Copyright (c) 2012, Joalah Designs LLC
@@ -30,10 +30,21 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "PathDefinitions.h"
+#import "SizeChangeDefinitions.h"
 
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+// Helper class used to pass user settings around
 
-@property (strong, nonatomic) UIWindow *window;
+@interface JdConfiguration : NSObject
+
+@property BezierPathEnumType leadOut;       // Type of path leading out from the starting point
+@property BezierPathEnumType leadIn;        // Type of path leading into the finish point
+@property DestinationQuadrant quadrant;     // Quadrant of the finish point
+@property BOOL rotate;                      // Rotate the object to match the path
+@property BOOL preRotate;                   // Pre rotate the object prior to animation
+@property BOOL annotate;                    // Annotate the path with points and control points
+@property SizeChangeEnum sizeChange;        // Shrink, grow or keep the same object size
+
 
 @end
