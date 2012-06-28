@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		434B4CF8159CF99B00BEE859 /* icon-iphone-pathmove-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 434B4CF7159CF99B00BEE859 /* icon-iphone-pathmove-57x57.png */; };
+		434B4CFB159CF9A700BEE859 /* icon-iphone-pathmove-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 434B4CFA159CF9A700BEE859 /* icon-iphone-pathmove-114x114.png */; };
+		434B4D00159CFA2E00BEE859 /* ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = 434B4CFC159CFA2E00BEE859 /* ghost.png */; };
+		434B4D01159CFA2E00BEE859 /* ghost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 434B4CFD159CFA2E00BEE859 /* ghost@2x.png */; };
+		434B4D02159CFA2E00BEE859 /* ghostBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 434B4CFE159CFA2E00BEE859 /* ghostBig.png */; };
+		434B4D03159CFA2E00BEE859 /* ghostBig@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 434B4CFF159CFA2E00BEE859 /* ghostBig@2x.png */; };
 		43F49C49151B6EE200E8124F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F49C48151B6EE200E8124F /* UIKit.framework */; };
 		43F49C4B151B6EE200E8124F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F49C4A151B6EE200E8124F /* Foundation.framework */; };
 		43F49C4D151B6EE200E8124F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F49C4C151B6EE200E8124F /* CoreGraphics.framework */; };
@@ -17,14 +23,8 @@
 		43F49C64151B6F2B00E8124F /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C61151B6F2B00E8124F /* main.png */; };
 		43F49C65151B6F2B00E8124F /* setup.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C62151B6F2B00E8124F /* setup.png */; };
 		43F49C67151B6F3600E8124F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C66151B6F3600E8124F /* README.md */; };
-		43F49C69151B6F4B00E8124F /* icon-iphone-normal_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C68151B6F4B00E8124F /* icon-iphone-normal_57x57.png */; };
-		43F49C6B151B6F4E00E8124F /* icon-iphone-retina_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C6A151B6F4E00E8124F /* icon-iphone-retina_114x114.png */; };
 		43F49C6D151B6F5200E8124F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C6C151B6F5200E8124F /* Default.png */; };
 		43F49C6F151B6F5500E8124F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C6E151B6F5500E8124F /* Default@2x.png */; };
-		43F49C76151B6F9000E8124F /* ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C72151B6F9000E8124F /* ghost.png */; };
-		43F49C77151B6F9000E8124F /* ghost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C73151B6F9000E8124F /* ghost@2x.png */; };
-		43F49C78151B6F9000E8124F /* ghostBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C74151B6F9000E8124F /* ghostBig.png */; };
-		43F49C79151B6F9000E8124F /* ghostBig@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F49C75151B6F9000E8124F /* ghostBig@2x.png */; };
 		43F49C89151B6FD200E8124F /* JdBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F49C7B151B6FD200E8124F /* JdBezierPath.m */; };
 		43F49C8A151B6FD200E8124F /* JdBezierPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F49C7D151B6FD200E8124F /* JdBezierPoint.m */; };
 		43F49C8B151B6FD200E8124F /* JdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F49C7F151B6FD200E8124F /* JdConfiguration.m */; };
@@ -36,6 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		434B4CF7159CF99B00BEE859 /* icon-iphone-pathmove-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-iphone-pathmove-57x57.png"; sourceTree = "<group>"; };
+		434B4CFA159CF9A700BEE859 /* icon-iphone-pathmove-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-iphone-pathmove-114x114.png"; sourceTree = "<group>"; };
+		434B4CFC159CFA2E00BEE859 /* ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost.png; sourceTree = "<group>"; };
+		434B4CFD159CFA2E00BEE859 /* ghost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ghost@2x.png"; sourceTree = "<group>"; };
+		434B4CFE159CFA2E00BEE859 /* ghostBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghostBig.png; sourceTree = "<group>"; };
+		434B4CFF159CFA2E00BEE859 /* ghostBig@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ghostBig@2x.png"; sourceTree = "<group>"; };
 		43F49C44151B6EE200E8124F /* PathMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F49C48151B6EE200E8124F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43F49C4A151B6EE200E8124F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,14 +56,8 @@
 		43F49C61151B6F2B00E8124F /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		43F49C62151B6F2B00E8124F /* setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setup.png; sourceTree = "<group>"; };
 		43F49C66151B6F3600E8124F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		43F49C68151B6F4B00E8124F /* icon-iphone-normal_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-iphone-normal_57x57.png"; sourceTree = "<group>"; };
-		43F49C6A151B6F4E00E8124F /* icon-iphone-retina_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-iphone-retina_114x114.png"; sourceTree = "<group>"; };
 		43F49C6C151B6F5200E8124F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		43F49C6E151B6F5500E8124F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		43F49C72151B6F9000E8124F /* ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost.png; sourceTree = "<group>"; };
-		43F49C73151B6F9000E8124F /* ghost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ghost@2x.png"; sourceTree = "<group>"; };
-		43F49C74151B6F9000E8124F /* ghostBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghostBig.png; sourceTree = "<group>"; };
-		43F49C75151B6F9000E8124F /* ghostBig@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ghostBig@2x.png"; sourceTree = "<group>"; };
 		43F49C7A151B6FD200E8124F /* JdBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdBezierPath.h; sourceTree = "<group>"; };
 		43F49C7B151B6FD200E8124F /* JdBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdBezierPath.m; sourceTree = "<group>"; };
 		43F49C7C151B6FD200E8124F /* JdBezierPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdBezierPoint.h; sourceTree = "<group>"; };
@@ -172,10 +172,10 @@
 		43F49C70151B6F6C00E8124F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				434B4CFA159CF9A700BEE859 /* icon-iphone-pathmove-114x114.png */,
+				434B4CF7159CF99B00BEE859 /* icon-iphone-pathmove-57x57.png */,
 				43F49C6E151B6F5500E8124F /* Default@2x.png */,
 				43F49C6C151B6F5200E8124F /* Default.png */,
-				43F49C6A151B6F4E00E8124F /* icon-iphone-retina_114x114.png */,
-				43F49C68151B6F4B00E8124F /* icon-iphone-normal_57x57.png */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -183,10 +183,10 @@
 		43F49C71151B6F7D00E8124F /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				43F49C72151B6F9000E8124F /* ghost.png */,
-				43F49C73151B6F9000E8124F /* ghost@2x.png */,
-				43F49C74151B6F9000E8124F /* ghostBig.png */,
-				43F49C75151B6F9000E8124F /* ghostBig@2x.png */,
+				434B4CFC159CFA2E00BEE859 /* ghost.png */,
+				434B4CFD159CFA2E00BEE859 /* ghost@2x.png */,
+				434B4CFE159CFA2E00BEE859 /* ghostBig.png */,
+				434B4CFF159CFA2E00BEE859 /* ghostBig@2x.png */,
 			);
 			name = Graphics;
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 		43F49C3B151B6EE200E8124F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Joalah Designs LLC";
 			};
 			buildConfigurationList = 43F49C3E151B6EE200E8124F /* Build configuration list for PBXProject "PathMove" */;
@@ -247,15 +247,15 @@
 				43F49C64151B6F2B00E8124F /* main.png in Resources */,
 				43F49C65151B6F2B00E8124F /* setup.png in Resources */,
 				43F49C67151B6F3600E8124F /* README.md in Resources */,
-				43F49C69151B6F4B00E8124F /* icon-iphone-normal_57x57.png in Resources */,
-				43F49C6B151B6F4E00E8124F /* icon-iphone-retina_114x114.png in Resources */,
 				43F49C6D151B6F5200E8124F /* Default.png in Resources */,
 				43F49C6F151B6F5500E8124F /* Default@2x.png in Resources */,
-				43F49C76151B6F9000E8124F /* ghost.png in Resources */,
-				43F49C77151B6F9000E8124F /* ghost@2x.png in Resources */,
-				43F49C78151B6F9000E8124F /* ghostBig.png in Resources */,
-				43F49C79151B6F9000E8124F /* ghostBig@2x.png in Resources */,
 				43F49C8E151B6FD200E8124F /* JdSetupViewController.xib in Resources */,
+				434B4CF8159CF99B00BEE859 /* icon-iphone-pathmove-57x57.png in Resources */,
+				434B4CFB159CF9A700BEE859 /* icon-iphone-pathmove-114x114.png in Resources */,
+				434B4D00159CFA2E00BEE859 /* ghost.png in Resources */,
+				434B4D01159CFA2E00BEE859 /* ghost@2x.png in Resources */,
+				434B4D02159CFA2E00BEE859 /* ghostBig.png in Resources */,
+				434B4D03159CFA2E00BEE859 /* ghostBig@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

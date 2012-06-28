@@ -10,8 +10,10 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>icon-iphone-normal_57x57.png</string>
-		<string>icon-iphone-retina_114x114.png</string>
+		<string>icon-iphone-pathmove-57x57.png</string>
+		<string>icon-iphone-pathmove-114x114.png</string>
+		<string>Default.png</string>
+		<string>Default@2x.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -19,8 +21,10 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>icon-iphone-normal_57x57.png</string>
-				<string>icon-iphone-retina_114x114.png</string>
+				<string>icon-iphone-pathmove-57x57.png</string>
+				<string>icon-iphone-pathmove-114x114.png</string>
+				<string>Default.png</string>
+				<string>Default@2x.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<false/>
