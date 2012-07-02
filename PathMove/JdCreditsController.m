@@ -1,8 +1,6 @@
 //
-//  JdSetupViewCOntroller.h
-//  PathMove
+//  JdCreditsController.m
 //
-
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
 //
@@ -31,34 +29,45 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+#import "JdCreditsController.h"
 
-#import <UIKit/UIKit.h>
-#import "JdConfiguration.h"
+#pragma mark - Implementation
+@implementation JdCreditsController
 
-// View controller for setting user selections
+#pragma mark - Instance Methods
 
-@interface JdSetupViewController : UIViewController
+// Initialise the class
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+        self.title = @"Credits";
 
-// User selctions to be passed back to the caller
-@property (strong, nonatomic) JdConfiguration* configuration;
+    }
+    return self;
+}
+
+// This App only supports portrait orientation
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
 
 
-@property (strong, nonatomic) IBOutlet UISegmentedControl* segQuadrant;
-@property (strong, nonatomic) IBOutlet UISegmentedControl* segLeadOut;
-@property (strong, nonatomic) IBOutlet UISegmentedControl* segLeadIn;
-@property (strong, nonatomic) IBOutlet UISwitch* swRotate;
-@property (strong, nonatomic) IBOutlet UISwitch* swAnnotate;
-@property (strong, nonatomic) IBOutlet UISegmentedControl* segSize;
-@property (strong, nonatomic) IBOutlet UISwitch* swPreRotate;
+// User wants to see the Joalah Designs LLC website
+-(IBAction)displayJoalahDesigns:(id)sender
+{
+    NSURL *target = [[NSURL alloc] initWithString:@"http://www.JoalahDesigns.com"];
+    [[UIApplication sharedApplication] openURL:target];
+}
 
--(IBAction)quadrantChanged:(id)sender;
--(IBAction)leadOutChanged:(id)sender;
--(IBAction)leadInChanged:(id)sender;
--(IBAction)rotateChanged:(id)sender;
--(IBAction)annotateChanged:(id)sender;
--(IBAction)sizeChanged:(id)sender;
--(IBAction)preRotateChanged:(id)sender;
--(IBAction)creditsButtonPressed:(id)sender;
+// User wants to see the Joalah Apps website for this App
+-(IBAction)displayJoalahAppsPathMove:(id)sender
+{
+    NSURL *target = [[NSURL alloc] initWithString:@"http://www.JoalahApps.com/PathMove"];
+    [[UIApplication sharedApplication] openURL:target];
+}
 
 
 @end

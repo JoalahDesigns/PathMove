@@ -33,6 +33,7 @@
 
 
 #import "JdSetupViewController.h"
+#import "JdCreditsController.h"
 
 #pragma mark - Local method declarations
 @interface JdSetupViewController() 
@@ -98,6 +99,9 @@
         segSize.selectedSegmentIndex = 0;
         swPreRotate.on = NO;
     }
+    
+    UIBarButtonItem *creditsButton = [[UIBarButtonItem alloc] initWithTitle:@"Credits" style:UIBarButtonItemStylePlain target:self action:@selector(creditsButtonPressed:)];          
+    self.navigationItem.rightBarButtonItem = creditsButton;    
 }
 
 - (void)viewDidUnload
@@ -222,6 +226,12 @@
 -(IBAction)preRotateChanged:(id)sender
 {
     configuration.preRotate = ((UISwitch*)sender).on;
+}
+
+-(IBAction)creditsButtonPressed:(id)sender
+{
+    JdCreditsController* creditsController = [[JdCreditsController alloc] init];
+    [self.navigationController pushViewController:creditsController animated:YES];
 }
 
 @end
