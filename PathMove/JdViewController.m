@@ -213,22 +213,27 @@
 {
     [super loadView];
     
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    
+    float baseOffset;
+    baseOffset = screenBounds.size.height-120;
+    
     // Set up the user buttons
     clear = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [clear setTitle:@"Clear" forState:UIControlStateNormal];
-    clear.frame = CGRectMake(10, 360, 60, 40);
+    clear.frame = CGRectMake(10, baseOffset, 60, 40);
     [clear addTarget:self action:@selector(clearPressed:) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:clear];
     
     run = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [run setTitle:@"Run" forState:UIControlStateNormal];
-    run.frame = CGRectMake(130, 360, 60, 40);
+    run.frame = CGRectMake(130, baseOffset, 60, 40);
     [run addTarget:self action:@selector(runPressed:) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:run];
     
     setup = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [setup setTitle:@"Setup" forState:UIControlStateNormal];
-    setup.frame = CGRectMake(250, 360, 60, 40);
+    setup.frame = CGRectMake(250, baseOffset, 60, 40);
     [setup addTarget:self action:@selector(setupPressed:) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:setup];
 
